@@ -1,0 +1,26 @@
+{
+  "name": "furniture-hub",
+  "version": "1.0.0",
+  "description": "A modern and user friendly furniture website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HasiniPrabodika/Furniture-Hub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HasiniPrabodika/Furniture-Hub/issues"
+  },
+  "homepage": "https://github.com/HasiniPrabodika/Furniture-Hub#readme",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0"
+  }
+}
