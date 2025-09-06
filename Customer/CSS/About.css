@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4e2c10;
+    padding: 10px 20px;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid orange;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About Us */
+.about {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #5b2c00;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.about-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #5b2c00;
+}
+
+.about-content ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+
+.footer {
+  background-color: #4a2e18;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  color: #f0c28c;
+  margin-bottom: 10px;
+  border-left: 4px solid orange;
+  padding-left: 8px;
+  font-size: 18px;
+}
+
+.footer-column p,
+.footer-column li {
+  font-size: 14px;
+  line-height: 2.1;
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #ccc;
+  border-top: 1px solid #ffffff30;
+  padding-top: 15px;
+}
+
+.footer-bottom a {
+  color: #ccc;
+  margin:0 5px;
+}
