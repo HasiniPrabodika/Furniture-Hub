@@ -2,9 +2,7 @@
   "name": "furniture-hub",
   "version": "1.0.0",
   "description": "A modern and user friendly furniture website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "repository": {
     "type": "git",
@@ -18,7 +16,6 @@
   },
   "homepage": "https://github.com/HasiniPrabodika/Furniture-Hub#readme",
   "dependencies": {
-    "body-parser": "^2.2.0",
     "express": "^5.1.0",
     "mongoose": "^8.18.0"
   }
