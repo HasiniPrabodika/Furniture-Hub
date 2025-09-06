@@ -1,10 +1,6 @@
 
-function resetForm() {
-  document.getElementById("furnitureForm").reset();
-}
-
-
-document.getElementById("furnitureForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Furniture item added successfully!");
-});
+window.location.href = "../../Customer/HTML/HomePage.html";
+window.location.href = "../../Customer/HTML/ProductPage.html";
+window.location.href = "../../Customer/HTML/Review.html";
+window.location.href = "../../Customer/HTML/ContactPage.html";
+window.location.href = "../../Customer/HTML/About.html";
