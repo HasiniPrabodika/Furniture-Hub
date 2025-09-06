@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/HasiniPrabodika/Furniture-Hub#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0"
   }
 }
