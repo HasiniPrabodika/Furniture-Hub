@@ -14,11 +14,11 @@
                               <span>Furniture Hub</span>
                         </div>
                         <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Product</a></li>
-                                <li><a href="#">Review</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="#" onclick="goToHomePage()">Home</a></li>
+                                <li><a href="#" onclick="goToProductPage()">Product</a></li>
+                                <li><a href="#" onclick="goToReviewPage()">Review</a></li>
+                                <li><a href="#" onclick="goToContactPage()">Contact</a></li>
+                                <li><a href="#" onclick="goToAboutPage()">About Us</a></li>
                                 <li><a href="#"><strong>Call Now</strong></a></li>
                         </ul>
                     </nav>
@@ -107,5 +107,27 @@
                      <p>© 2025 Furniture Hub. All Rights Reserved. <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Services</a></p>
                 </div>
         </footer>
+       <script>
+              function goToHomePage() {
+              window.location.href = 'HomePage.html';
+              }
+
+              function goToProductPage() {
+              window.location.href = 'ProductPage.html';
+              }
+
+              function goToReviewPage() {
+              window.location.href = 'Review.html';
+              }
+
+              function goToContactPage() {
+              window.location.href = 'ContactPage.html';
+              }
+
+              function goToAboutPage() {
+              window.location.href = 'About.html';
+              }
+        </script>
+
     </body>    
 </html>

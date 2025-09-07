@@ -16,12 +16,12 @@
                        <span>Furniture Hub</span>
                     </div>
                         <ul>
-                         <li><a href="HomePage.html">Home</a></li>
-                         <li><a href="ProductPage.html">Product</a></li>
-                         <li><a href="Review.html">Review</a></li>
-                         <li><a href="ContactPage.html">Contact</a></li>
-                         <li><a href="About.html">About Us</a></li>
-                         <li><a href="#"><strong>Call Now</strong></a></li>
+                         <li><a href="#" onclick="goToHomePage()">Home</a></li>
+                          <li><a href="#" onclick="goToProductPage()">Product</a></li>
+                          <li><a href="#" onclick="goToReviewPage()">Review</a></li>
+                          <li><a href="#" onclick="goToContactPage()">Contact</a></li>
+                          <li><a href="#" onclick="goToAboutPage()">About Us</a></li>
+                          <li><a href="#"><strong>Call Now</strong></a></li>
                         </ul>
                 </nav>
             </div>
@@ -52,6 +52,7 @@
       </form>
     </div>
   </main>
+
 <footer class="footer">
     <div class="footer-container">
       <div class="footer-column">
@@ -93,3 +94,70 @@
   <script src="../JS/Admin login.js"></script>
 </body>
 </html>
+
+
+
+      <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-column">
+                            <h3>Furniture Hub</h3>
+                            <p>Creating beautiful,<br>functional spaces for over 25 years.<br>Your trusted partner in home design and furnishing.</p>
+                    </div>
+
+                    <div class="footer-column">
+                            <h3>Contact/Location</h3>
+                            <p>Call us: 071-0498507<br>
+                            Email us: <a href="mailto:furniturehub@gmail.com">furniturehub@gmail.com</a><br>
+                            Visit us: No.7 Muthumala Watta,<br>New road junction, Padalangala</p>
+                    </div>
+
+                    <div class="footer-column">
+                           <h3>Categories</h3>
+                                <ul>
+                                    <li>Dining sets</li>
+                                    <li>Living room</li>
+                                    <li>Bed room</li>
+                                    <li>Tables/ chairs</li>
+                                </ul>
+                    </div>
+
+                     <div class="footer-column">
+                              <h3>Services</h3>
+                                <ul>
+                                     <li>Custom Design</li>
+                                     <li>Home Consultation</li>
+                                     <li>Delivery & Setup</li>
+                                     <li>Interior Planning</li>
+                                </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                     <p>© 2025 Furniture Hub. All Rights Reserved. <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Services</a></p>
+                </div>
+  </footer>
+   <script>
+      function goToHomePage() {
+      window.location.href = "../../Customer/HTML/HomePage.html";
+      }
+
+      function goToProductPage() {
+      window.location.href = "../../Customer/HTML/ProductPage.html";
+      }
+
+      function goToReviewPage() {
+      window.location.href = "../../Customer/HTML/Review.html";
+      }
+
+      function goToContactPage() {
+      window.location.href = "../../Customer/HTML/ContactPage.html";
+      }
+
+      function goToAboutPage() {
+      window.location.href = "../../Customer/HTML/About.html";
+      }
+   </script>
+
+ </body> 
+ </html>
+
