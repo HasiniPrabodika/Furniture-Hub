@@ -30,7 +30,7 @@
                                 <li><a href="Review.html">Review</a></li>
                                 <li><a href="ContactPage.html">Contact</a></li>
                                 <li><a href="About.html">About Us</a></li>
-                                <li><a href="#"><strong>Call Now</strong></a></li>
+                                
                         </ul>
                     </nav>
             </div>
@@ -38,65 +38,24 @@
   <div class="container">
     <h1>Our Furniture Products</h1>
     <h5><center>Explore our wide range of high-quality furniture</center></h5>
-    <div class="search-box">
-  <input type="text" placeholder="Search furniture....">
-  <button><i class="fa fa-search"></i></button>
-</div>
-
-<div class="filters">
-  <div class="filter-group">
-    <label>Category</label>
-    <select>
-      <option>Dining Set</option>
-      <option>Bedroom </option>
-      <option>Living Room</option>
-    </select>
-  </div>
-  <div class="filter-group">
-    <label>Price & Range</label>
-    <select>
-      <option>Availability</option>
-      <option>In Stock</option>
-      <option>Out of Stock</option>
-    </select>
-  </div>
+ 
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search furniture....">
+    <button id="searchButton"><i class="fa fa-search"></i></button>
 </div>
 <table>
-  <thead>
-    <tr>
-      <th>Product</th>
-      <th>Category</th>
-      <th>Price</th>
-      <th>Stoke</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sofa</td>
-      <td>Living room</td>
-      <td>Rs.45000</td>
-      <td>In Stoke</td>
-    </tr>
-    <tr>
-      <td>Chair</td>
-      <td>Living room</td>
-      <td>Rs.55000</td>
-      <td>In Stoke</td>
-    </tr>
-    <tr>
-      <td>Table</td>
-      <td>Dining room</td>
-      <td>Rs.45000</td>
-      <td>In Stoke</td>
-    </tr>
-    <tr>
-      <td>Bed</td>
-      <td>Bed room</td>
-      <td>Rs.45000</td>
-      <td>In Stoke</td>
-    </tr>
-  </tbody>
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody id="productTableBody">
+        </tbody>
 </table>
+
 
     <!-- Dining Table Section -->
     <div class="product-section" style="position:relative">
