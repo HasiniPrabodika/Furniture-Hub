@@ -32,36 +32,43 @@
       <div class="form-container">
         <h2 class="section-header"><span class="icon">💬</span> Send us a Message</h2>
         <p class="desc">Fill out the form below and we'll get back to you within 24 hours.</p>
-<form class="contact-form">
-  <div class="form-group">
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" required>
-  </div>
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7a6b8a09-38f8-4c7e-b4a7-d76285eefaf2">
 
-  <div class="form-group">
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" required>
-  </div>
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    
+    <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="fullName" required>
+    </div>
 
-  <div class="form-group">
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone">
-  </div>
+    <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
 
-  <div class="form-group">
-    <label for="category">Category:</label>
-    <input type="text" id="category">
-  </div>
+    <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
 
+    <div class="form-group">
+        <label for="category">Category:</label>
+        <select name="category">
+            <option>Dining Set</option>
+            <option>Bedroom</option>
+            <option>Living Room</option>
+        </select>
+    </div>
 
-  <div class="form-group">
-    <label for="message">Your Message:</label>
-    <textarea id="message" rows="3"></textarea>
-  </div>
+    <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+    </div>
 
-  <div class="form-group center-button">
-    <button type="submit" class="submit-button">Send Message</button>
-  </div>
+    <div class="form-group center-button">
+        <button type="submit" class="submit-button">Send Message</button>
+    </div>
 </form>
       </div>
     </section><section>
@@ -80,12 +87,14 @@
 
     <section class="social-section">
       <h3>Follow Us</h3>
-      <div class="social-icons">
-        <span><img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/></span>
-        <span><img src="https://img.icons8.com/ios-filled/30/000000/twitter.png"/></span>
-        <span><img src="https://img.icons8.com/ios-filled/30/000000/instagram-new.png"/></span>
-        <span><img src="https://img.icons8.com/ios-filled/30/000000/youtube-play.png"/></span>
-      </div>
+<div class="social-icons">
+  <a href="https://www.facebook.com/https://www.facebook.com/share/1EaCBB7tUs/ " target="_blank">
+    <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
+  </a>
+  <a href="https://www.youtube.com/channel/https://youtube.com/@nimalisenanayaka?si=kopRu17Nm8MYGMPY " target="_blank">
+    <img src="https://img.icons8.com/ios-filled/30/000000/youtube-play.png"/>
+  </a>
+</div>
       <p class="subscribe-text">
         Get the latest update, design, tips, and exclusive offers!
       </p>
@@ -101,7 +110,7 @@
 
                     <div class="footer-column">
                             <h3>Contact/Location</h3>
-                            <p>Call us: 071-0498507<br>
+                            <p>Call us: <a href="tel:071-0498507">0710498507</a><br>
                             Email us: <a href="mailto:furniturehub@gmail.com">furniturehub@gmail.com</a><br>
                             Visit us: No.7 Muthumala Watta,<br>New road junction, Padalangala</p>
                     </div>
@@ -109,10 +118,10 @@
                     <div class="footer-column">
                            <h3>Categories</h3>
                                 <ul>
-                                    <li>Dining sets</li>
-                                    <li>Living room</li>
-                                    <li>Bed room</li>
-                                    <li>Tables/ chairs</li>
+                                    <li><a href="ProductPage.html">Dining sets</a></li>
+    <li><a href="ProductPage.html">Living room</a></li>
+    <li><a href="ProductPage.html#Bedroom">Bed room</a></li>
+    <li><a href="ProductPage.html#Living Room">Tables/ chairs</a></li>
                                 </ul>
                     </div>
 
