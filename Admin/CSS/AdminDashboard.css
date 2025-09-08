@@ -260,19 +260,38 @@ nav ul li a:hover{
     padding: 6px 0;
 }
 .delete-btn {
-    position: absolute;
-    top: 11px;
-    right: 13px;
-    cursor: pointer;
-    font-size: 20px;
-    color: #d8c3ac;
-    transition: color 0.2s;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
 .delete-btn:hover {
-    color: #f66;
+  background-color: #c0392b;
 }
 .products {
     margin-bottom: 60px;  
+}
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
 }
 
 footer {
