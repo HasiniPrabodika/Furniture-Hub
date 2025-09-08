@@ -1,227 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="UTF-800">
-        <title>Furniture Hub</title>
-        <link rel="stylesheet" href="../CSS/Review.css">
-    </head>
-    <body>
-      <header>
-            <div class="navbar">
-               
-                <nav>
-                    <div class="logo">
-                       <img src="..\..\Assets\Logo\Logo.png" alt="Furniture Hub Logo">
-                       <span>Furniture Hub</span>
-                    </div>
-                        <ul>
-                                <li><a href="#" onclick="goToHomePage()">Home</a></li>
-                                <li><a href="#" onclick="goToProductPage()">Product</a></li>
-                                <li><a href="#" onclick="goToReviewPage()">Review</a></li>
-                                <li><a href="#" onclick="goToContactPage()">Contact</a></li>
-                                <li><a href="#" onclick="goToAboutPage()">About Us</a></li>
-                                <li><a href="#"><strong>Call Now</strong></a></li>
-                        </ul>
-                </nav>
-            </div>
-      </header>
-      <img src="..\..\Assets\Other Images\Reviewss Page.jpg" alt="Main Image" class="main-image">
-      <main class="main-content">
-        <section class="reviews-header">
-          <h1>Customer Reviews</h1>
-          <p>See what our customers are saying about our furniture.</p>
-        </section>
-        <button class="review-button" id="addReviewBtn">
-          <span class="plus-icon">+</span> Add your review
-        </button>
-
-        <script>
-          document.getElementById("addReviewBtn").addEventListener("click" , function() {
-            window.location.href = "AddReview.html";
-          });
-        </script>
-
-  
-
-        <div class="row">
-          <div class="card">
-            <img src="..\..\Assets\Dining Sets\Dining Set 01 .jpeg" alt="Reviewer Photo" class="review-photo">
-            <div class="review-info">
-              <span class="reviewer-name">Dedunu Kumari</span>
-              <span class="Product-name">Dinning Table & Chairs</span>
-              <span class="Product-category">Dinning Sets</span>
-              <span class="review-date">Jan 15, 2025</span>
-            </div>
-            <div class="review-rating">★★★★★</div>
-            <p class="review-text">Beautiful dining set with a solid table and comfortable chairs. 
-              Easy to assemble, looks stylish in the dining area, and feels very durable. 
-              Highly satisfied with the purchase.</p>
-          </div>
-          <div class="card">
-            <img src="..\..\Assets\Dining Sets\Dining Set 09.png" alt="Reviewer Photo" class="review-photo">
-            <div class="review-info">
-              <span class="reviewer-name">Nimal Shantha</span>
-              <span class="Product-name">Dinning Table & Chairs</span>
-              <span class="Product-category">Dinning Sets</span>
-              <span class="review-date">Feb 28, 2025</span>
-            </div>
-            <div class="review-rating">★★★★☆</div>
-            <p class="review-text">The dining table and chairs are very sturdy and well-made. 
-              The design is modern yet comfortable, and the chairs provide good support. 
-              Perfect size for family meals, and the quality of the wood/finish makes it look elegant. 
-              Great value for the price!</p>
-          </div>
-          <div class="card">
-            <img src="..\..\Assets\Living Room Items\TV Stand.png" alt="Reviewer Photo" class="review-photo">
-            <div class="review-info">
-              <span class="reviewer-name">Buddhika Kalhari</span>
-              <span class="Product-name">TV Stand</span>
-              <span class="Product-category">Living Room</span>
-              <span class="review-date">Jan 15, 2024</span>
-            </div>
-            <div class="review-rating">★★★★★</div>
-            <p class="review-text">The TV stand is sturdy and stylish, with plenty of space for devices and storage. 
-              It fits perfectly in the living room and adds a modern touch. 
-              Very happy with the quality.</p>
-          </div>
-          <div class="card">
-            <img src="..\..\Assets\Living Room Items\Glass_Cabinet-remove-bg.png" alt="Reviewer Photo" class="review-photo">
-            <div class="review-info">
-              <span class="reviewer-name">Sansala Perera</span>
-              <span class="Product-name">TV Stand</span>
-              <span class="Product-category">Living Room</span>
-              <span class="review-date">April 13, 2025</span>
-            </div>
-            <div class="review-rating">★★★☆☆</div>
-            <p class="review-text">Great TV stand with a sleek design. 
-              Strong build, easy to set up, and looks perfect under the TV. 
-              Good value for money.</p>
-          </div>
-          <div class="card">
-            <img src="..\..\Assets\Bed Room Items\Bed 02.jpeg" alt="Reviewer Photo" class="review-photo">
-            <div class="review-info">
-              <span class="reviewer-name">Shyamali Perera</span>
-              <span class="Product-name">Bed</span>
-              <span class="Product-category">Bed Room</span>
-              <span class="review-date">May 15, 2025</span>
-            </div>
-            <div class="review-rating">★★★★★</div>
-            <p class="review-text">The bed is strong and comfortable with a beautiful design.
-              Easy to assemble and adds a cozy look to the bedroom. 
-              Very good quality for the price.</p>
-          </div>
-          <div class="card">
-            <img src="..\..\Assets\Living Room Items\Side Chair 01.png" alt="Reviewer Photo" class="review-photo">
-            <div class="review-info">
-              <span class="reviewer-name">Udaya Jayathunga</span>
-              <span class="Product-name">Chair</span>
-              <span class="Product-category">Table & Chair</span>
-              <span class="review-date">May 25, 2025</span>
-            </div>
-            <div class="review-rating">★★★★☆</div>
-            <p class="review-text">The chair is comfortable, sturdy, and well-designed. 
-              It provides good support and looks great in the room.
-              Excellent quality for the price.</p>
-          </div>
-          <div class="card">
-            <img src="..\..\Assets\Living Room Items\Side Chair 01.jpg" alt="Reviewer Photo" class="review-photo">
-            <div class="review-info">
-              <span class="reviewer-name">Sakunthala Kumari</span>
-              <span class="Product-name">Dinning Chairs</span>
-              <span class="Product-category">Dinning Room</span>
-              <span class="review-date">June 09, 2024</span>
-            </div>
-            <div class="review-rating">★★★☆☆</div>
-            <p class="review-text">The dining chairs are very comfortable and sturdy. 
-              The design is elegant, and they match perfectly with the table. 
-              Great quality and value for money.</p>
-          </div>
-          <div class="card">
-            <img src="..\..\Assets\Bed Room Items\Dressing Table 02.jpg" alt="Reviewer Photo" class="review-photo">
-            <div class="review-info">
-              <span class="reviewer-name">WRS Hemantha</span>
-              <span class="Product-name">Mirror Table</span>
-              <span class="Product-category">Bed Room</span>
-              <span class="review-date">June 19, 2025</span>
-            </div>
-            <div class="review-rating">★★★★★</div>
-            <p class="review-text">The mirror table is stylish and elegant. 
-              It has a strong build, adds a touch of luxury to the room, and the quality is excellent for the price.</p>
-          </div>
-          <div class="card">
-            <img src="..\..\Assets\Bed Room Items\Three Door Closet 01.jpg" alt="Reviewer Photo" class="review-photo">
-            <div class="review-info">
-              <span class="reviewer-name">Sankalpani </span>
-              <span class="Product-name">Cupboard</span>
-              <span class="Product-category">Bed Room</span>
-              <span class="review-date">July 17, 2025</span>
-            </div>
-            <div class="review-rating">★★★★★</div>
-            <p class="review-text">The cupboard is spacious and sturdy with a neat design. 
-              It provides plenty of storage and fits perfectly in the bedroom. 
-              Very good quality for the price</p>
-          </div>
+<head> 
+    <meta charset="UTF-8">
+    <title>Furniture Hub</title>
+    <link rel="stylesheet" href="../CSS/Review.css">
+</head>
+<body>
+  <header>
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                   <img src="..\..\Assets\Logo\Logo.png" alt="Furniture Hub Logo">
+                   <span>Furniture Hub</span>
+                </div>
+                    <ul>
+                        <li><a href="#" onclick="goToHomePage()">Home</a></li>
+                        <li><a href="#" onclick="goToProductPage()">Product</a></li>
+                        <li><a href="#" onclick="goToReviewPage()">Review</a></li>
+                        <li><a href="#" onclick="goToContactPage()">Contact</a></li>
+                        <li><a href="#" onclick="goToAboutPage()">About Us</a></li>
+                        <li><a href="#"><strong>Call Now</strong></a></li>
+                    </ul>
+            </nav>
         </div>
-      </main>
-      <footer class="footer">
-                <div class="footer-container">
-                    <div class="footer-column">
-                            <h3>Furniture Hub</h3>
-                            <p>Creating beautiful,<br>functional spaces for over 25 years.<br>Your trusted partner in home design and furnishing.</p>
-                    </div>
+  </header>
 
-                    <div class="footer-column">
-                            <h3>Contact/Location</h3>
-                            <p>Call us: 071-0498507<br>
-                            Email us: <a href="mailto:furniturehub@gmail.com">furniturehub@gmail.com</a><br>
-                            Visit us: No.7 Muthumala Watta,<br>New road junction, Padalangala</p>
-                    </div>
+  <img src="..\..\Assets\Other Images\Reviewss Page.jpg" alt="Main Image" class="main-image">
 
-                    <div class="footer-column">
-                           <h3>Categories</h3>
-                                <ul>
-                                    <li>Dining sets</li>
-                                    <li>Living room</li>
-                                    <li>Bed room</li>
-                                    <li>Tables/ chairs</li>
-                                </ul>
-                    </div>
+  <main class="main-content">
+    <section class="reviews-header">
+      <h1>Customer Reviews</h1>
+      <p>See what our customers are saying about our furniture.</p>
+    </section>
 
-                     <div class="footer-column">
-                              <h3>Services</h3>
-                                <ul>
-                                     <li>Custom Design</li>
-                                     <li>Home Consultation</li>
-                                     <li>Delivery & Setup</li>
-                                     <li>Interior Planning</li>
-                                </ul>
-                    </div>
-                </div>
+    <button class="review-button" id="addReviewBtn">
+      <span class="plus-icon">+</span> Add your review
+    </button>
 
-                <div class="footer-bottom">
-                     <p>© 2025 Furniture Hub. All Rights Reserved. <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Services</a></p>
-                </div>
-        </footer>
-        <script>
-              function goToHomePage() {
-              window.location.href = 'HomePage.html';
-              }
+    <script>
+      document.getElementById("addReviewBtn").addEventListener("click" , function() {
+        window.location.href = "AddReview.html";
+      });
+    </script>
 
-              function goToProductPage() {
-              window.location.href = 'ProductPage.html';
-              }
+    <div id="reviews" class="row"></div>
 
-              function goToReviewPage() {
-              window.location.href = 'Review.html';
-              }
+  </main>
 
-              function goToContactPage() {
-              window.location.href = 'ContactPage.html';
-              }
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Furniture Hub</h3>
+            <p>Creating beautiful,<br>functional spaces for over 25 years.<br>Your trusted partner in home design and furnishing.</p>
+        </div>
 
-              function goToAboutPage() {
-              window.location.href = 'About.html';
-              }
-        </script>
-    </body>
-  </html>
+        <div class="footer-column">
+            <h3>Contact/Location</h3>
+            <p>Call us: 071-0498507<br>
+            Email us: <a href="mailto:furniturehub@gmail.com">furniturehub@gmail.com</a><br>
+            Visit us: No.7 Muthumala Watta,<br>New road junction, Padalangala</p>
+        </div>
+
+        <div class="footer-column">
+           <h3>Categories</h3>
+                <ul>
+                    <li>Dining sets</li>
+                    <li>Living room</li>
+                    <li>Bed room</li>
+                    <li>Tables/ chairs</li>
+                </ul>
+        </div>
+
+         <div class="footer-column">
+              <h3>Services</h3>
+                <ul>
+                     <li>Custom Design</li>
+                     <li>Home Consultation</li>
+                     <li>Delivery & Setup</li>
+                     <li>Interior Planning</li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+         <p>© 2025 Furniture Hub. All Rights Reserved. <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Services</a></p>
+    </div>
+  </footer>
+
+  <script>
+    
+    function goToHomePage() { window.location.href = 'HomePage.html'; }
+    function goToProductPage() { window.location.href = 'ProductPage.html'; }
+    function goToReviewPage() { window.location.href = 'Review.html'; }
+    function goToContactPage() { window.location.href = 'ContactPage.html'; }
+    function goToAboutPage() { window.location.href = 'About.html'; }
+
+    async function loadReviews() {
+      try {
+        const res = await fetch("http://localhost:5000/api/reviews");
+        const data = await res.json();
+
+        const reviewsDiv = document.getElementById("reviews");
+        reviewsDiv.innerHTML = data.map(r => `
+          <div class="card">
+            <img src="${r.photo ? "http://localhost:5000" + r.photo : "../../Assets/Other Images/default-user.png"}" 
+                 alt="Reviewer Photo" class="review-photo">
+            <div class="review-info">
+              <span class="reviewer-name">${r.name}</span>
+              <span class="Product-name">${r.productName}</span>
+              <span class="Product-category">${r.category || "N/A"}</span>
+              <span class="review-date">${new Date(r.createdAt).toLocaleDateString()}</span>
+            </div>
+            <div class="review-rating">${"★".repeat(r.rating)}${"☆".repeat(5 - r.rating)}</div>
+            <p class="review-text">${r.review}</p>
+          </div>
+        `).join("");
+      } catch (err) {
+        console.error("Error loading reviews:", err);
+      }
+    }
+
+    loadReviews();
+  </script>
+</body>
+</html>

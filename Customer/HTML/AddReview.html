@@ -56,14 +56,12 @@
 
       <div class="form-group">
         <label>Add Photo</label>
-        <input type="file" name="image">
+     
+        <input type="file" name="photo">
       </div>
 
       <button type="submit">Submit Review</button>
     </form>
-
-    <h3>All Reviews</h3>
-    <div id="reviewsList"></div>
   </div>
 
   <footer class="footer">
@@ -104,14 +102,14 @@
   </footer>
 
   <script>
-    // Navigation functions
+   
     function goToHomePage() { window.location.href = 'HomePage.html'; }
     function goToProductPage() { window.location.href = 'ProductPage.html'; }
     function goToReviewPage() { window.location.href = 'Review.html'; }
     function goToContactPage() { window.location.href = 'ContactPage.html'; }
     function goToAboutPage() { window.location.href = 'About.html'; }
 
-    // Submit review form
+    
     document.getElementById("reviewForm").addEventListener("submit", async function(e) {
       e.preventDefault();
       const formData = new FormData(this);
@@ -136,7 +134,7 @@
       }
     });
 
-    // Load reviews from backend
+    
     async function loadReviews() {
       try {
         const res = await fetch("http://localhost:5000/api/reviews");
@@ -152,7 +150,8 @@
             <h4>${r.name} (${r.rating}⭐)</h4>
             <p><strong>${r.productName}</strong> - ${r.category || "N/A"}</p>
             <p>${r.review}</p>
-            ${r.image ? `<img src="http://localhost:5000${r.image}" width="100">` : ""}
+            <!-- 🔹 FIXED: show photo -->
+            ${r.photo ? `<img src="http://localhost:5000${r.photo}" width="100">` : ""}
             <hr>
           `;
           container.appendChild(div);
@@ -162,7 +161,6 @@
       }
     }
 
-    // Load reviews on page load
     loadReviews();
   </script>
 </body>
