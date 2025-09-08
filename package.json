@@ -2,8 +2,6 @@
   "name": "furniture-hub",
   "version": "1.0.0",
   "description": "A modern and user friendly furniture website",
-
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HasiniPrabodika/Furniture-Hub.git"
@@ -16,7 +14,10 @@
   },
   "homepage": "https://github.com/HasiniPrabodika/Furniture-Hub#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
-    "mongoose": "^8.18.0"
+    "mongodb": "^6.19.0",
+    "mongoose": "^8.18.0",
+    "multer": "^2.0.2"
   }
 }
