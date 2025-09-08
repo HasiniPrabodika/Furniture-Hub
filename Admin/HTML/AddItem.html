@@ -11,15 +11,16 @@
     <div class="navbar">
       <nav>
         <div class="logo">
-          <img src="..\..\Assets\Logo\Logo.png" alt="Furniture Hub Logo"> 
+          <img src="../../Assets/Logo/Logo.png" alt="Furniture Hub Logo"> 
           <span>Furniture Hub</span>
         </div>
         <ul>
-          <li><a href="HomePage.html">Home</a></li>
-          <li><a href="ProductPage.html">Product</a></li>
-          <li><a href="Review.html">Review</a></li>
-          <li><a href="ContactPage.html">Contact</a></li>
-          <li><a href="About.html">About Us</a></li>
+          <li><a href="#" onclick="goToHomePage()">Home</a></li>
+          <li><a href="#" onclick="goToProductPage()">Product</a></li>
+          <li><a href="#" onclick="goToReviewPage()">Review</a></li>
+          <li><a href="#" onclick="goToContactPage()">Contact</a></li>
+          <li><a href="#" onclick="goToAboutPage()">About Us</a></li>
+          <li><a href="#"><strong>Call Now</strong></a></li>
         </ul>
       </nav>
     </div>
@@ -27,9 +28,7 @@
 
   <div class="form-container">
     <h2>Add New Furniture</h2>
-    <p class="subtitle">Add a new furniture item to your catalog, fill in all the details below.</p>
-
-    <form id="furnitureForm">
+    <form id="furnitureForm" enctype="multipart/form-data">
       <div class="form-group">
         <label for="name">Name*</label>
         <input type="text" id="name" name="name" placeholder="Modern Chair" required>
@@ -42,7 +41,7 @@
 
       <div class="form-group">
         <label for="category">Category*</label>
-        <select id="category" name="category">
+        <select id="category" name="category" required>
           <option value="">-- Select Category --</option>
           <option value="dining">Dining Sets</option>
           <option value="living">Living Room</option>
@@ -63,50 +62,68 @@
       </div>
 
       <div class="button-group">
-        <button type="button" class="btn cancel" onclick="resetForm()">Cancel</button>
-        <button type="submit" class="btn submit">Add Item</button>
+        <button type="button" onclick="resetForm()">Cancel</button>
+        <button type="submit">Add Item</button>
       </div>
     </form>
   </div>
 
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-column">
-        <h3>Furniture Hub</h3>
-        <p>Creating beautiful,<br>functional spaces for over 25 years.<br>Your trusted partner in home design and furnishing.</p>
-      </div>
-      <div class="footer-column">
-        <h3>Contact/Location</h3>
-        <p>Call us: 071-0498507<br>
-        Email us: <a href="mailto:furniturehub@gmail.com">furniturehub@gmail.com</a><br>
-        Visit us: No.7 Muthumala Watta,<br>New road junction, Padalangala</p>
-      </div>
-      <div class="footer-column">
-        <h3>Categories</h3>
-        <ul>
-          <li>Dining sets</li>
-          <li>Living room</li>
-          <li>Bed room</li>
-          <li>Tables/ chairs</li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>Services</h3>
-        <ul>
-          <li>Custom Design</li>
-          <li>Home Consultation</li>
-          <li>Delivery & Setup</li>
-          <li>Interior Planning</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Furniture Hub. All Rights Reserved. 
-        <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Services</a>
-      </p>
-    </div>
-  </footer>
+  <script>
+  
+    function goToHomePage() { window.location.href = "../../Customer/HTML/HomePage.html"; }
+    function goToProductPage() { window.location.href = "../../Customer/HTML/ProductPage.html"; }
+    function goToReviewPage() { window.location.href = "../../Customer/HTML/Review.html"; }
+    function goToContactPage() { window.location.href = "../../Customer/HTML/ContactPage.html"; }
+    function goToAboutPage() { window.location.href = "../../Customer/HTML/About.html"; }
 
-  <script src="../JS/AddItem.js"></script>
+    
+    function resetForm() {
+      document.getElementById("furnitureForm").reset();
+    }
+
+  
+    const form = document.getElementById("furnitureForm");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const price = document.getElementById("price").value;
+      const category = document.getElementById("category").value;
+      const description = document.getElementById("description").value;
+      const image = document.getElementById("image").files[0];
+
+      if (!image) {
+        alert("Please select an image!");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("price", price);
+      formData.append("category", category);
+      formData.append("description", description);
+      formData.append("image", image);
+
+      try {
+        const response = await fetch("http://localhost:5000/api/items", {
+          method: "POST",
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          alert("Item added successfully ✅");
+          form.reset();
+        } else {
+          alert("Error adding item: " + data.message);
+        }
+      } catch (err) {
+        console.error(err);
+        alert("Server error. Check console.");
+      }
+    });
+  </script>
 </body>
 </html>
