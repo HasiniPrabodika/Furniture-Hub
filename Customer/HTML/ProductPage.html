@@ -30,7 +30,7 @@
                                 <li><a href="Review.html">Review</a></li>
                                 <li><a href="ContactPage.html">Contact</a></li>
                                 <li><a href="About.html">About Us</a></li>
-                                <li><a href="#"><strong>Call Now</strong></a></li>
+                                
                         </ul>
                     </nav>
             </div>
@@ -38,65 +38,24 @@
   <div class="container">
     <h1>Our Furniture Products</h1>
     <h5><center>Explore our wide range of high-quality furniture</center></h5>
-    <div class="search-box">
-  <input type="text" placeholder="Search furniture....">
-  <button><i class="fa fa-search"></i></button>
-</div>
-
-<div class="filters">
-  <div class="filter-group">
-    <label>Category</label>
-    <select>
-      <option>Dining Set</option>
-      <option>Bedroom </option>
-      <option>Living Room</option>
-    </select>
-  </div>
-  <div class="filter-group">
-    <label>Price & Range</label>
-    <select>
-      <option>Availability</option>
-      <option>In Stock</option>
-      <option>Out of Stock</option>
-    </select>
-  </div>
+ 
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search furniture....">
+    <button id="searchButton"><i class="fa fa-search"></i></button>
 </div>
 <table>
-  <thead>
-    <tr>
-      <th>Product</th>
-      <th>Category</th>
-      <th>Price</th>
-      <th>Stoke</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sofa</td>
-      <td>Living room</td>
-      <td>Rs.45000</td>
-      <td>In Stoke</td>
-    </tr>
-    <tr>
-      <td>Chair</td>
-      <td>Living room</td>
-      <td>Rs.55000</td>
-      <td>In Stoke</td>
-    </tr>
-    <tr>
-      <td>Table</td>
-      <td>Dining room</td>
-      <td>Rs.45000</td>
-      <td>In Stoke</td>
-    </tr>
-    <tr>
-      <td>Bed</td>
-      <td>Bed room</td>
-      <td>Rs.45000</td>
-      <td>In Stoke</td>
-    </tr>
-  </tbody>
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody id="productTableBody">
+        </tbody>
 </table>
+
 
     <!-- Dining Table Section -->
     <div class="product-section" style="position:relative">
@@ -105,25 +64,25 @@
   <button class="carousel-btn next-btn">&#8250;</button>
       <div class="product-grid">
        <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Dining Sets\Dining Set 10.jpg" alt="Dining Table">
+          <img src="..\..\Assets\Dining Sets\Dining Set 10.jpg" alt="Dining Table">
           <div class="product-name">RJ Dining Set</div>
           <div class="product-price"><Rs class="12500">RS.12500 00</Rs></div>
           <div class="product-desc">Strong wooden dining table with 6 chairs.</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Dining Sets\Dining Set 04.jpg" alt="Dining Table">
+          <img src="..\..\Assets\Dining Sets\Dining Set 04.jpg" alt="Dining Table">
            <div class="product-name">Glassing Dining Set</div>
           <div class="product-price"><Rs class="12500">RS.12500 00</Rs></div>
           <div class="product-desc">Strong wooden dining table with 4 chairs.</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Dining Sets\Dining Set 06.jpg" alt="Dining Table">
+          <img src="..\..\Assets\Dining Sets\Dining Set 06.jpg" alt="Dining Table">
            <div class="product-name">Stripped Dining Table</div>
           <div class="product-price"><Rs class="44800">RS.44800 00</Rs></div>
           <div class="product-desc">Strong wooden dining table with 6 chairs.</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Dining Sets\Dining Set 08.jpg" alt="Dining Table">
+          <img src="..\..\Assets\Dining Sets\Dining Set 08.jpg" alt="Dining Table">
            <div class="product-name">Elizabeth Dining Set</div>
           <div class="product-price"><Rs class="54800">RS.54800 00</Rs></div>
           <div class="product-desc">Strong wooden dining table with 6 chairs.</div>
@@ -139,25 +98,25 @@
   <button class="carousel-btn next-btn">&#8250;</button>
       <div class="product-grid">
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Living Room Items\TV Stand and Cabinet 02.jpg" alt="Living Room">
+          <img src="..\..\Assets\Living Room Items\TV Stand and Cabinet 02.jpg" alt="Living Room">
          <div class="product-name">TV stand and Cabinet</div>
           <div class="product-price"><Rs class="53999">RS.53999 00</Rs></div>
           <div class="product-desc">SLength – 204cm | Width – 45cm | Height – 185cm</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Living Room Items\coffee table.jpg" alt="Living Room">
+          <img src="..\..\Assets\Living Room Items\coffee table.jpg" alt="Living Room">
          <div class="product-name">Coffee Table</div>
           <div class="product-price"><Rs class="44000">RS.44000 00</Rs></div>
           <div class="product-desc">Diameter – 90cm | Height – 41cm</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Living Room Items\copa coffee table.jpeg" alt="Living Room">
+          <img src="..\..\Assets\Living Room Items\copa coffee table.jpeg" alt="Living Room">
        <div class="product-name">Copa Coffee Table</div>
           <div class="product-price"><Rs class="9000">RS.9000 00</Rs></div>
           <div class="product-desc">Small Table – Length – 45cm | Width – 45cm | Height – 51cm</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Living Room Items\Glass Cabinet.jpeg" alt="Living Room">
+          <img src="..\..\Assets\Living Room Items\Glass Cabinet.jpeg" alt="Living Room">
         <div class="product-name">Glass Cabinet</div>
           <div class="product-price"><Rs class="25000">RS.25000 00</Rs></div>
           <div class="product-desc">Width: 66 inches
@@ -167,7 +126,7 @@ Height: 20 inches
 Depth: 18 inches</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Living Room Items\montage simple classic handmadd wooden sturdy chair.webp" alt="Chair">
+          <img src="..\..\Assets\Living Room Items\montage simple classic handmadd wooden sturdy chair.webp" alt="Chair">
           <div class="product-name">Study Chair</div>
           <div class="product-price"><Rs class="12000">RS.12000 00</Rs></div>
           <div class="product-desc">Length: 45 cms
@@ -177,7 +136,7 @@ Depth: 45 cms
 Height: 110 cms.</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Living Room Items\sheesham wooden rocking chair wooden rolling chair.jpeg"alt="Chair">
+          <img src="..\..\Assets\Living Room Items\sheesham wooden rocking chair wooden rolling chair.jpeg"alt="Chair">
           <div class="product-name">sheesham wooden rocking chair wooden rolling chair</div>
           <div class="product-price"><Rs class="12000">RS.12000 00</Rs></div>
           <div class="product-desc">	Length: 22" x Width: 36" x Height: 36"</div>
@@ -192,25 +151,25 @@ Height: 110 cms.</div>
   <button class="carousel-btn next-btn">&#8250;</button>
       <div class="product-grid">
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Bed Room Items\Bed 04.jpg" alt="Bedroom">
+          <img src="..\..\Assets\Bed Room Items\Bed 04.jpg" alt="Bedroom">
           <div class="product-name">Dilano Bed</div>
           <div class="product-price"><Rs class="12000">RS.12000 00</Rs></div>
           <div class="product-desc">Double (48"x75")</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Bed Room Items\Bed 06.jpg" alt="Bedroom">
+          <img src="..\..\Assets\Bed Room Items\Bed 06.jpg" alt="Bedroom">
            <div class="product-name">Rover Bed</div>
           <div class="product-price"><Rs class="67500">RS.67500 00</Rs></div>
           <div class="product-desc">Single (36"x75")</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Bed Room Items\Modern Dressing Table.jpg"alt="Beautiful Art">
+          <img src="..\..\Assets\Bed Room Items\Modern Dressing Table.jpg"alt="Beautiful Art">
        <div class="product-name">Osaka Dressing Table</div>
           <div class="product-price"><Rs class="48500">RS.48500 00</Rs></div>
           <div class="product-desc">L80.2 W45.2 H182.3(cm)/Sahara Walnut & Walnut</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Bed Room Items\Three Door Closet 01.jpg" alt="Beautiful Art">
+          <img src="..\..\Assets\Bed Room Items\Three Door Closet 01.jpg" alt="Beautiful Art">
         <div class="product-name">Three Door Closet</div>
           <div class="product-price"><Rs class="215000">RS.215000 00</Rs></div>
           <div class="product-desc">Width: 2 Door - 44 inches, 3 Door - 66 inches, Custom
@@ -220,7 +179,7 @@ Height: 78 inches
 Depth: 24 inches</div>
         </div>
         <div class="product-card">
-          <img src="D:\project\Furniture-Hub\Assets\Bed Room Items\Two door closet 01.jpg" alt="Bowl">
+          <img src="..\..\Assets\Bed Room Items\Two door closet 01.jpg" alt="Bowl">
           <div class="product-name">Two door closet</div>
           <div class="product-price"><Rs class="205000">RS.205000 00</Rs></div>
           <div class="product-desc">Width: 2 Door - 44 inches, 3 Door - 66 inches
