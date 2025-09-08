@@ -91,6 +91,16 @@ nav ul li a:hover{
   display: flex;
   align-items: center;
 }
+select {
+  width: 100%;          /* Full width */
+  height: 45px;         /* Dropdown height */
+  font-size: 16px;      /* Font size */
+  padding: 8px 12px;    /* Inner spacing */
+  border-radius: 5px;   /* Round corners */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
 .section-header .icon {
   font-size: 1.3rem;
   margin-right: 5px;
@@ -98,13 +108,13 @@ nav ul li a:hover{
 .desc {
   color: #b4967c;
   font-size: 0.96rem;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
-  background: #fff7ee; /* Optional: background color for better visibility */
+  background: #fff7ee;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -135,6 +145,12 @@ nav ul li a:hover{
   text-align: center;
 }
 
+option {
+  font-size: 16px;
+  color: #000;
+}
+
+
 .submit-button {
   background-color: orange;
   color: white;
@@ -153,19 +169,21 @@ nav ul li a:hover{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
   padding: 20px;
   background-color: #faeadd;
   border-radius: 10px;
   justify-content: justify;
   text-align: justify;
+  margin-bottom: 10px;
 }
 
 .contact-info,
 .business-hours {
   flex: 1 1 45%;
-  min-width: 280px;
+  min-width: 350px;
   text-align: center;
+  gap: 40px;
 
 }
 
