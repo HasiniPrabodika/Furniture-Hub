@@ -161,33 +161,33 @@ th, td {
   border-bottom: 2px solid #ffd7b1;
   padding-bottom: 5px;
 }
-/* The Modal (Pop-up) */
+
 .modal {
-    display: none; /* Modal එක මුලින්ම hide කර තබයි */
-    position: fixed; /* Screen එකේ එකම තැනක තබයි */
-    z-index: 100; /* අනිත් elements වලට ඉහළින් පෙන්නයි */
+    display: none;
+    position: fixed;
+    z-index: 100; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.8); /* Semi-transparent background එකක් දමයි */
+    background-color: rgba(0,0,0,0.8); 
     padding-top: 60px;
 }
 
-/* Modal Content Box */
+
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* Screen එකේ මැදට ගෙන ඒම */
+    margin: 5% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Box එකේ පළල */
+    width: 80%; 
     max-width: 600px;
     border-radius: 10px;
     text-align: center;
 }
 
-/* Modal Image */
+
 .modal-content img {
     max-width: 100%;
     height: auto;
@@ -195,7 +195,7 @@ th, td {
     margin-bottom: 20px;
 }
 
-/* The Close Button */
+
 .close-btn {
     color: #aaa;
     float: right;
@@ -230,10 +230,10 @@ th, td {
 }
 .product-card img {
   width: 100%;
-  height: 200px;          /* Set a fixed height for consistent display */
-  object-fit: cover;      /* Ensures the image fills the area while maintaining aspect ratio */
-  border-radius: 8px;     /* Slightly rounded corners, optional for aesthetics */
-  margin-bottom: 15px;    /* Space below image for text */
+  height: 200px;        
+  object-fit: cover;      
+  border-radius: 8px;     
+  margin-bottom: 15px;   
   box-shadow: 0 1px 6px #f5dfc4; 
   display: block;
   margin-left: auto;
