@@ -55,7 +55,7 @@ app.post('/upload', upload.single('image'), (req, res) => {
     return res.status(400).send('No file uploaded.');
   }
   res.json({ success: true, path: '/uploads/' + req.file.filename });
-=======
+  
 const mongoose = require('mongoose');
 const cors = require('cors');
 
