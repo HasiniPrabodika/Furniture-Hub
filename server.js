@@ -25,7 +25,9 @@ app.use((req, res, next) => {
 
 
 app.get('/', (req, res) => {
-  res.send('✅ Server is running. Go to /Admin/login.html to log in.');
+ 
+    res.redirect('/Admin/HTML/Adminlogin.html');
+
 });
 
 
@@ -34,7 +36,7 @@ app.post('/api/admin/login', (req, res) => {
 
   if (email === 'admin@gmail.com' && password === 'admin123') {
   
-    return res.redirect('/Admin/AdminDashboard.html');
+    return res.redirect('/Admin/HTML/AdminDashboard.html');
   }
 
   return res.status(401).json({ success: false, message: 'Invalid credentials' });

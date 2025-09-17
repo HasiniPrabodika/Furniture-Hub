@@ -38,8 +38,8 @@
         <h2>Admin Login</h2>
       </div>
 
-      <form>
-       <form id="loginForm" method="POST" action="/login">
+     
+       <form id="loginForm" method="POST" action="/api/admin/login">
                 <label>Email Address <span>*</span> </label>
               
                 <input type="email" id="email" name="email" placeholder="admin@gmail.com" required>
@@ -141,9 +141,11 @@ const data = await res.json();
 
  alert("Login Successful!");
 
- window.location.href = "/api/admin/dashboard";
+window.location.href = "/Admin/HTML/AdminDashboard.html";
 
- } catch(err) {
+ } 
+ 
+ catch(err) {
 
  console.error("Error:", err);
 
